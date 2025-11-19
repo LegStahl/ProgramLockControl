@@ -4558,6 +4558,19 @@
 		)
 		(uuid "2da2a66c-94bb-414b-9614-0feebd3dc8de")
 	)
+	(text "NOTE:\nTo set the diode at the output, \nwe will need to replace R3 with 6k200\nand then set a diode with voltage drop ~0.055V.\n"
+		(exclude_from_sim no)
+		(at 94.488 26.416 0)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "4e314e22-41ea-4293-bb9a-4fed04f998d3")
+	)
 	(text "OSCILLATOR"
 		(exclude_from_sim no)
 		(at 104.14 87.376 0)
@@ -10269,7 +10282,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.85u CDSP43-4R7M"
+		(property "Value" "50u CDSP43-4R7M"
 			(at 99.06 44.4499 0)
 			(effects
 				(font
