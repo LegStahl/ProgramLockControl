@@ -6,7 +6,7 @@ Also device can another control high current till 5A load. This connection is su
 ## Microcontroller and power schema 
 In the image below schema of the mcu and power.
 <div style="text-align: center;">
-    <img src="/images/schema_microcontroller_power.png" alt="HTML Image">
+    <img src="/images/schema_microcontoller_power.png" alt="HTML Image">
 </div>
 
 
