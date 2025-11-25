@@ -4,3 +4,5 @@ fp-lib-table
 *.kicad_prl
 additional_files
 *lck
+*html
+*-table

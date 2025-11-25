@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "664afda1-d053-4a3e-94ea-5cfb2e9bf32c")
 	(paper "A4")
+	(title_block
+		(title "ProgrammLockControl(MCU and power)")
+		(date "2025-11-25")
+		(rev "V2.0")
+		(company "HOMEMADE")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x01_Pin"
 			(pin_names
@@ -4493,9 +4499,9 @@
 		)
 		(uuid ed581fcc-3604-4596-820c-ed3d4831e5c2)
 	)
-	(text "Vin~12V\nVout~3V3(later will be changed)\nImax~1A5"
+	(text "Vin~12V\nVout~3V8\nImax~1A5"
 		(exclude_from_sim no)
-		(at 103.886 20.066 0)
+		(at 94.996 21.336 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4560,7 +4566,7 @@
 	)
 	(text "NOTE:\nTo set the diode at the output, \nwe will need to replace R3 with 6k200\nand then set a diode with voltage drop ~0.55V.\n"
 		(exclude_from_sim no)
-		(at 94.488 26.416 0)
+		(at 94.996 27.178 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4571,9 +4577,9 @@
 		)
 		(uuid "4e314e22-41ea-4293-bb9a-4fed04f998d3")
 	)
-	(text "Vout~3.8 1.25*(1+R3/R4)\nTon/Toff~0,64(Vout+Vf)/(Vin(min)-Vsat-Vout)\nf~80kHz\nTon+Toff~125*10^(-7) 1/f\nToff~762*10^(-8) (Ton+Toff)/((Ton/Toff)+1)\nTon~487*10^(-8) (Ton+Toff)-Toff\nCt~1.92*10^(-10) 4*10^(-5)*Ton\nIpk~2.5A 2Iout(max)\nRsc~0.15R 0.3/Ipeak  Ipeak=2A\nL(min)~243*10(-7) ((Vin(min)-Vsat-Vout)/Ipeak)Ton(max) But it is better to choose higher value\nCo~274*10(-7) (Ipeak(Ton+Toff))/8Vripple   Vripple~0,114 0,03*Vout\n"
+	(text "Vout~3.8 1.25*(1+R3/R4)\nTon/Toff~0,64(Vout+Vf)/(Vin(min)-Vsat-Vout)\nf~80kHz\nTon+Toff~125*10^(-7) 1/f\nToff~762*10^(-8) (Ton+Toff)/((Ton/Toff)+1)\nTon~487*10^(-8) (Ton+Toff)-Toff\nCt~1.92*10^(-10) 4*10^(-5)*Ton\nIpk~2.5A 2Iout(max)\nRsc~0.15R 0.3/Ipeak  Ipeak=2A\nL(min)~243*10(-7) ((Vin(min)-Vsat-Vout)/Ipeak)Ton(max) \nBut it is better to choose higher value\nCo~274*10(-7) (Ipeak(Ton+Toff))/8Vripple   Vripple~0,114 0,03*Vout\n"
 		(exclude_from_sim no)
-		(at 15.748 63.754 0)
+		(at 14.478 69.596 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4758,7 +4764,7 @@
 		(uuid "8e9f856a-f3ff-4d2b-ad92-198f583d3361")
 	)
 	(junction
-		(at 49.53 44.45)
+		(at 48.26 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8efb88e3-eef4-4e68-8d80-4f52646d7075")
@@ -5169,7 +5175,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 43.18) (xy 49.53 43.18)
+			(xy 48.26 43.18) (xy 62.23 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5489,7 +5495,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 35.56) (xy 52.07 35.56)
+			(xy 48.26 35.56) (xy 52.07 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5669,7 +5675,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 36.83) (xy 49.53 35.56)
+			(xy 48.26 36.83) (xy 48.26 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5909,16 +5915,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 36.83) (xy 157.48 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cb4aa2e-28da-4b36-9e1c-02f39d8a8724")
-	)
-	(wire
-		(pts
 			(xy 73.66 60.96) (xy 73.66 38.1)
 		)
 		(stroke
@@ -5949,7 +5945,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 43.18) (xy 49.53 44.45)
+			(xy 48.26 43.18) (xy 48.26 44.45)
 		)
 		(stroke
 			(width 0)
@@ -9867,16 +9863,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 49.53 40.64 0)
+		(at 48.26 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7ace9fac-909d-4d37-ab31-8198220f7eb3")
 		(property "Reference" "C9"
-			(at 53.34 39.3699 0)
+			(at 41.91 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9885,7 +9880,7 @@
 			)
 		)
 		(property "Value" "40n"
-			(at 53.34 41.9099 0)
+			(at 41.91 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9894,7 +9889,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
-			(at 50.4952 44.45 0)
+			(at 49.2252 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9903,7 +9898,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 40.64 0)
+			(at 48.26 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9912,7 +9907,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 49.53 40.64 0)
+			(at 48.26 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10075,7 +10070,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 44.45 0)
+		(at 48.26 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10084,7 +10079,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ea2fc4c-463d-43a4-868e-774688b39293")
 		(property "Reference" "#PWR07"
-			(at 49.53 50.8 0)
+			(at 48.26 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10093,7 +10088,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 49.53 0)
+			(at 48.26 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10101,7 +10096,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 44.45 0)
+			(at 48.26 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10110,7 +10105,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 44.45 0)
+			(at 48.26 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10119,7 +10114,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 44.45 0)
+			(at 48.26 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
