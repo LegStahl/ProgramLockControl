@@ -9879,7 +9879,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "40n"
+		(property "Value" "1n"
 			(at 41.91 41.91 0)
 			(effects
 				(font
